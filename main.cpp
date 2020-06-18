@@ -217,7 +217,7 @@ public:
       {
         cout << "Vlad: Blya, ya v odnih trusah" << endl;
       }
-      pants_couter--;
+      pants_counter--;
     }
 
     void SetUpPants()
@@ -229,7 +229,7 @@ public:
         cout << "Vlad: Da blya, kuda stolko shtanov?!" << endl;
       }
 
-      plants_counter++;
+      pants_counter++;
     }
     
 private:
@@ -252,6 +252,7 @@ int main()
        << "GetVolume - Vichislyaet ob'yom Vlada\n"
        << "GoForward, GoBack, GoLeft, GoRight (at den only) - Dvigaet Vlada v prostranstve\n"
        << "Puknut (at notch only) - igra v Dotu i ne tolko\n"
+       << "GetPants - snyat/odet pants\n"
        << "ExitGame - vihod iz igri\n\n";
 
     for (;;)
