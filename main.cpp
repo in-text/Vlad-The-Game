@@ -208,9 +208,33 @@ public:
         
         return false;
     }
+
+    void GetDownPants()
+    {
+      cout << "Vlad: A Nahua ya ih snal?" << endl;
+
+      if (pants_counter < 0)
+      {
+        cout << "Vlad: Blya, ya v odnih trusah" << endl;
+      }
+      pants_couter--;
+    }
+
+    void SetUpPants()
+    {
+      cout << "Vlad: A Nahua ya ih nadel?" << endl;
+
+      if (pants_counter > 3)
+      {
+        cout << "Vlad: Da blya, kuda stolko shtanov?!" << endl;
+      }
+
+      plants_counter++;
+    }
     
 private:
     int current_hp = 100;
+    int pants_counter = 0;
 };
 
 int main()
