@@ -9,7 +9,8 @@
 //dop comment for commit
 
 #include <iostream>
-#include <time.h>
+#include <ctime>
+#include <cstdlib>
 
 using namespace std;
 
@@ -212,8 +213,9 @@ private:
     int current_hp = 100;
 };
 
-int main(int argc, const char * argv[])
+int main()
 {
+  srand(time(0));
     Vlad vlad;
     string status;
     
@@ -221,6 +223,13 @@ int main(int argc, const char * argv[])
     vlad.BeAHuman();
     vlad.BeAJerk();
     
+  cout << "Spisok Comand:\n"
+       << "GetStatus - Informatsia o zdorovie Vlada i\n"
+       << "GetVolume - Vichislyaet ob'yom Vlada\n"
+       << "GoForward, GoBack, GoLeft, GoRight (at den only) - Dvigaet Vlada v prostranstve\n"
+       << "Puknut (at notch only) - igra v Dotu i ne tolko\n"
+       << "ExitGame - vihod iz igri\n\n";
+
     for (;;)
     {
     a:
