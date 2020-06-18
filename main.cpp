@@ -541,6 +541,12 @@ int main()
                 vlad.lifeStatus();
                 vlad.GetStatus(succes);
             }
+
+            else if (status == "GetPants")
+            {
+              if (succes) vlad.GetDownPants();
+              if (!succes) vlad.SetUpPants();
+            }
             
             else if (status == "GetVolume")
             {
