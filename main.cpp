@@ -296,6 +296,12 @@ int main()
                 
                 cout << "Current Volume: " << vlad.GetVladVolume(w, h, d) << endl;
             }
+
+            else if (status == "GetPants")
+            {
+              if (succes) vlad.GetDownPants();
+              if (!succes) vlad.SetUpPants();
+            }
             
             else if (status == "GoLeft")
             {
